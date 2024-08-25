@@ -17,9 +17,9 @@ function Homepage () {
             <div className="heroContainer">
                 <div className="heroText">
                     <h3>hi there! i'm</h3>
-                    <h1>Kelly Tran</h1>
+                    <h1>Arushi Munjal</h1>
                     <h4>
-                        a <strong>full-stack developer</strong> who loves building friendly products for <strong>all</strong>
+                        a <strong>developer</strong> who loves building friendly products for <strong>all</strong>
                     </h4>
                     <div className="buttonContainer">
                         <Link className="homeButtons" to="/about">
@@ -41,20 +41,20 @@ function Homepage () {
             <div className="musicContainer">
                 <div className="latestInfo">
                     <h2> currently: </h2>
-                    <h3>incoming senior @ UC Berkeley studying computer science</h3>
+                    <h3>incoming junior @ UC San Diego studying computer science</h3>
                     <h2> next up: </h2>
-                    <h3>data engineering intern @ PwC</h3>
+                    <h3>software engineering intern @ arthrex</h3>
                     <h2> previously: </h2>
-                    <h3>swe intern @ UnitedMasters</h3>
+                    <h3>data science intern @ nanomood</h3>
                     <h2> listening to: </h2>
-                    <h3>a blend of r&b, edm & indie pop</h3>
+                    <h3>a blend of r&b, folk sufi & indie pop</h3>
                 </div>
                 <div className="spotifyContainer">
                     <h2> the latest hits: </h2>
                     <iframe
                         style={{ borderRadius: '12px' }}
                         title="Spotify Playlist"
-                        src="https://open.spotify.com/embed/playlist/1aA5ZAVhMEDS7T8bmA9mLZ?utm_source=generator&theme=0"
+                        src="https://open.spotify.com/playlist/0yNDHoNJ4RQ9StLBdlPFQP?si=c6a7e1804dc54238"
                         width="100%"
                         height="352"
                         frameBorder="0"

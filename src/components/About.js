@@ -44,7 +44,7 @@ function About() {
                     <div className="aboutText">
                         <h2>about me</h2>
                         <p>
-                            While originally from SoCal, I currently live in the Bay attending UC Berkeley studying Computer Science and Data Science.
+                            While originally from Denver, Colorado, I currently live in the Bay Area, CA attending UC San Diego studying Computer Science, Math, and Global Health.
                             <br /><br />
                             I believe in the power of utilizing <strong> creative thinking </strong> to solve everyday problems.
                             Between making latte art as a my part-time barista and storytelling my life through songwriting, expression of creativity fuels me.
