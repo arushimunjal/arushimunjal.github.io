@@ -1,47 +1,23 @@
 /* Header.css */
 .header {
-    text-align: left;
-    padding: 40px;
-    max-width: 800px;
-    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fdfdfd; /* Light neutral background */
   }
   
-  .name-highlight {
-    color: #5e7d6b; /* Custom green color */
-    font-weight: bold;
-    font-size: 2.5rem;
+  .navigation a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4a4a4a; /* Muted dark color for text */
+    font-weight: 500;
   }
   
-  .subtitle {
-    font-size: 1.2rem;
-    font-style: italic;
-    margin-top: 10px;
+  .navigation a:hover {
+    color: #ba68c8; /* Highlight color on hover */
   }
   
-  .role-highlight {
-    font-style: italic;
-    color: #b564d7; /* Purple color */
-  }
-  
-  .highlight {
-    color: #e63946; /* Pink-red color */
-  }
-  
-  .buttons {
-    margin-top: 20px;
-  }
-  
-  .button {
-    padding: 10px 20px;
-    margin-right: 10px;
-    background-color: transparent;
-    border: 1px solid #5e7d6b; /* Match green color */
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #5e7d6b;
-    color: white;
+  .toggle-button {
+    /* Style your toggle button here */
   }

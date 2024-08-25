@@ -6,19 +6,19 @@ const About = () => {
     <div className="about">
       <div className="about-section">
         <h3>currently:</h3>
-        <p>Incoming junior @ UC San Diego studying computer science</p>
+        <p>incoming junior @ uc san diego studying computer science</p>
       </div>
       <div className="about-section">
         <h3>next up:</h3>
-        <p>Software Engineeriing Intern @ Arthrex</p>
+        <p>software engineering intern @ Arthrex</p>
       </div>
       <div className="about-section">
         <h3>previously:</h3>
-        <p>Data Science Intern @ Center of Multimodal Imaging and Genetics</p>
+        <p>data science intern @ center of multimodal imaging and genetics</p>
       </div>
       <div className="about-section">
         <h3>listening to:</h3>
-        <p>A blend of r&b, folk sufi & indie pop</p>
+        <p>a blend of r&b, folk sufi & indie pop</p>
       </div>
     </div>
   );

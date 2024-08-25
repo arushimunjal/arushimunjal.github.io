@@ -1,19 +1,21 @@
-import React from 'react';
-import './Header.css';
-
-const Header = () => {
-  return (
-    <header className="header">
-      <h1>hi there! i'm <span className="name-highlight">Arushi Munjal</span></h1>
-      <p className="subtitle">
-        a <span className="role-highlight">full-stack developer</span> who loves building friendly products for <span className="highlight">all</span>
-      </p>
-      <div className="buttons">
-        <button className="button">about me →</button>
-        <button className="button">what i do →</button>
-      </div>
-    </header>
-  );
-};
-
-export default Header;
+function Header() {
+    return (
+      <header className="header">
+        <div className="logo">
+          {/* Add your logo image or text here */}
+          <img src="assets/arushi.png" alt="Logo" />
+        </div>
+        <nav className="navigation">
+          <a href="#home">home</a>
+          <a href="#about">about me</a>
+          <a href="#work">what i do</a>
+        </nav>
+        <div className="toggle-button">
+          <input type="checkbox" id="toggle" />
+          <label htmlFor="toggle" className="toggle-label"></label>
+        </div>
+      </header>
+    );
+  }
+  
+  export default Header;
