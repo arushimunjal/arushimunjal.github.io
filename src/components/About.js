@@ -3,29 +3,29 @@ import { motion } from "framer-motion";
 import '../App.css';
 
 // Import your images here
-import Annie from "../assets/imgs/about/annie.jpg";
-import Cal_Day from "../assets/imgs/about/cal-day.jpg";
-import Concert from "../assets/imgs/about/concert.jpg";
-import Glade from "../assets/imgs/about/glade.jpg";
-import Headshot from "../assets/imgs/about/kelly-headshot.jpg";
-import Jenny from "../assets/imgs/about/jenny.jpg";
-import Matcha from "../assets/imgs/about/matcha.jpg";
-import Tea_Party from "../assets/imgs/about/teaparty.jpg";
-import Soph from "../assets/imgs/about/sophme.jpg";
+import Arushi from "../assets/imgs/about/arushi.jpg";
+import Anjali from "../assets/imgs/about/anjali.jpg";
+import Dunes from "../assets/imgs/about/dunes.jpg";
+import Food from "../assets/imgs/about/food.jpg";
+import Horse from "../assets/imgs/about/horse.jpg";
+import Megha from "../assets/imgs/about/megha.jpg";
+import Tiya from "../assets/imgs/about/tiya.jpg";
+import WIC from "../assets/imgs/about/wic.jpg";
+import Yoga from "../assets/imgs/about/yoga.jpg";
 
 function About() {
     const imagesOne = [
-        { alt: "glade", src: Glade },
-        { alt: "sodoi concert", src: Concert },
-        { alt: "Cal Day", src: Cal_Day },
-        { alt: "matcha", src: Matcha }
+        { alt: "Food", src: Food },
+        { alt: "Dunes", src: Dunes },
+        { alt: "Anjali", src: Anjali },
+        { alt: "Tiya", src: Tiya }
     ];
 
     const imagesTwo = [
-        { alt: "Jenny", src: Jenny },
-        { alt: "Soph", src: Soph },
-        { alt: "annie", src: Annie },
-        { alt: "tea_party", src: Tea_Party }
+        { alt: "Megha", src: Megha },
+        { alt: "Yoga", src: Yoga },
+        { alt: "Horse", src: Horse },
+        { alt: "WIC", src: WIC }
     ];
 
     return (
@@ -39,7 +39,7 @@ function About() {
             <div className="aboutPage">
                 <div className="aboutContainer">
                     <div className="headshotImageContainer">
-                        <img alt="Kelly Tran Headshot" className='Headshot' src={Headshot}></img>
+                        <img alt="Arushi Munjal Headshot" className='Arushi' src={Arushi}></img>
                     </div>
                     <div className="aboutText">
                         <h2>about me</h2>
