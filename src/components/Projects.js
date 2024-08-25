@@ -1,21 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../App.css';
+import { experienceData } from '../constants/experienceData';
 
-function Navbar({ isDarkMode, setDarkMode }) {
+function Projects() {
   return (
-    <nav className="navbar">
-      <h2>My Portfolio</h2>
-      <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-      </div>
-      <button onClick={setDarkMode}>
-        {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-      </button>
-    </nav>
+    <div className="projectsPage">
+      {experienceData.map((project, index) => (
+        <div className="projectCard" key={index}>
+          <img src={project.image} alt={project.name} />
+          <h3>{project.name}</h3>
+          <p>{project.title}</p>
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            Learn more
+          </a>
+        </div>
+      ))}
+    </div>
   );
 }
 
-export default Navbar;
+export default Projects;
