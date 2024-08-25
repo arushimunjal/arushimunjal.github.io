@@ -1,0 +1,47 @@
+/* Header.css */
+.header {
+    text-align: left;
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .name-highlight {
+    color: #5e7d6b; /* Custom green color */
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  .role-highlight {
+    font-style: italic;
+    color: #b564d7; /* Purple color */
+  }
+  
+  .highlight {
+    color: #e63946; /* Pink-red color */
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: 1px solid #5e7d6b; /* Match green color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #5e7d6b;
+    color: white;
+  }
