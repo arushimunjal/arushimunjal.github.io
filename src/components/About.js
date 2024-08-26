@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import '../App.css';
 
 // Import your images here
-import Arushi from "../assets/imgs/about/arushi.jpg";
+import Arushi from "../assets/imgs/about/arushi.png";
 import Anjali from "../assets/imgs/about/anjali.jpg";
-import Dunes from "../assets/imgs/about/dunes.jpg";
+import Dunes from "../assets/imgs/about/dunes.JPG";
 import Food from "../assets/imgs/about/food.jpg";
 import Horse from "../assets/imgs/about/horse.jpg";
-import Megha from "../assets/imgs/about/megha.jpg";
+import Megha from "../assets/imgs/about/megha.JPG";
 import Tiya from "../assets/imgs/about/tiya.jpg";
 import WIC from "../assets/imgs/about/wic.jpg";
 import Yoga from "../assets/imgs/about/yoga.jpg";

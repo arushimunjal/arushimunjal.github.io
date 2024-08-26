@@ -1,19 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/imgs/icons/logo.png'; // Adjust the path according to your project structure
 import '../../App.css';
 
 function Navbar({ isDarkMode, setDarkMode }) {
   return (
     <nav className="navbar">
-      <h2>My Portfolio</h2>
-      <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
+      <div className="navbar-left">
+        <img src={logo} alt="Logo" className="navbar-logo" />
       </div>
-      <button onClick={setDarkMode}>
-        {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-      </button>
+      <div className="navbar-center">
+        <Link to="/">home</Link>
+        <Link to="/about">about me</Link>
+        <Link to="/projects">projects</Link>
+        <Link to="/projects">research</Link>
+        <Link to="/projects">photography</Link>
+      </div>
+      <div className="navbar-right">
+        <button className="toggle-dark-mode" onClick={setDarkMode}>
+          {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+        </button>
+      </div>
     </nav>
   );
 }

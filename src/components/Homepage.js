@@ -1,70 +1,56 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
-import cd from "../assets/imgs/homepage/cd.svg";
+import cd from "../assets/imgs/about/arushi.png";
 import '../App.css';
 
-function Homepage () {
+function Homepage() {
     return (
         <motion.div
-            className="container text-center  bg-black"
+            className="container text-center bg-black"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
         >
-        <div className="homePage">
-            <div className="heroContainer">
-                <div className="heroText">
-                    <h3>hi there! i'm</h3>
-                    <h1>Arushi Munjal</h1>
-                    <h4>
-                        a <strong>developer</strong> who loves building friendly products for <strong>all</strong>
-                    </h4>
-                    <div className="buttonContainer">
-                        <Link className="homeButtons" to="/about">
-                            about me <p> &#8594; </p>
-                        </Link>
-                        <Link className="homeButtons" to="/projects">
-                            what i do <p> &#8594; </p>
-                        </Link>
+            <div className="homePage">
+                <div className="heroContainer">
+                    <div className="heroText">
+                        <h3>hi there! i'm</h3>
+                        <h1>Arushi Munjal</h1>
+                        <h4>
+                            a <strong>junior at UC San Diego</strong> with a passion for creating impactful products that drive <strong>postive social change</strong>
+                        </h4>
+                        <div className="buttonContainer">
+                            <Link className="homeButtons" to="/about">
+                                about me <p> &#8594; </p>
+                            </Link>
+                            <Link className="homeButtons" to="/projects">
+                                what i do <p> &#8594; </p>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="headshotContainer">
+                        <img className="headshotImage" src={cd} alt="Arushi Munjal Headshot" />
                     </div>
                 </div>
-                <div className="recordContainer">
-                    <div className="recordCircle">
-                        <a href='https://open.spotify.com/track/3TY7q9rofAemFWnloXVP3T?si=0c2101ee435d4bae'>
-                            <img alt="Vinyl Record Player" src={cd}></img>
-                        </a>
-                    </div>                
+                <div className="musicContainer">
+                    <div className="latestInfo">
+                        <h2> currently: </h2>
+                        <h3> junior @ UCSD studying computer science and math</h3>
+                        <h2> this summer: </h2>
+                        <h3>software engineering intern @ arthrex</h3>
+                        <h2> previously: </h2>
+                        <h3>data science intern @ nanomood</h3>
+                        <h2> listening to: </h2>
+                        <h3>a blend of r&b, house music & folk urdu</h3>
+                    </div>
+                    <div className="spotifyContainer">
+                        <h2> the latest hits: </h2>
+                        <iframe style={{borderRadius: 12 + 'px'}} title="Spotify Playlist" src="https://open.spotify.com/embed/playlist/0yNDHoNJ4RQ9StLBdlPFQP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
-            <div className="musicContainer">
-                <div className="latestInfo">
-                    <h2> currently: </h2>
-                    <h3>incoming junior @ UC San Diego studying computer science</h3>
-                    <h2> next up: </h2>
-                    <h3>software engineering intern @ arthrex</h3>
-                    <h2> previously: </h2>
-                    <h3>data science intern @ nanomood</h3>
-                    <h2> listening to: </h2>
-                    <h3>a blend of r&b, folk sufi & indie pop</h3>
-                </div>
-                <div className="spotifyContainer">
-                    <h2> the latest hits: </h2>
-                    <iframe
-                        style={{ borderRadius: '12px' }}
-                        title="Spotify Playlist"
-                        src="https://open.spotify.com/playlist/0yNDHoNJ4RQ9StLBdlPFQP?si=c6a7e1804dc54238"
-                        width="100%"
-                        height="352"
-                        frameBorder="0"
-                        allowFullScreen
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"
-                    ></iframe>
-                </div>
-            </div>
-        </div>
         </motion.div>
     );
 };
