@@ -37,13 +37,13 @@ function Homepage() {
                 <div className="musicContainer">
                     <div className="latestInfo">
                         <h2> currently: </h2>
-                        <h3> junior @ UCSD studying computer science and math</h3>
+                        <h3> junior @ UCSD studying computer science & math</h3>
                         <h2> this summer: </h2>
                         <h3>software engineering intern @ arthrex</h3>
                         <h2> previously: </h2>
                         <h3>data science intern @ nanomood</h3>
                         <h2> listening to: </h2>
-                        <h3>a blend of r&b, house music & folk urdu</h3>
+                        <h3>a blend of r&b, house music & folk hindi</h3>
                     </div>
                     <div className="spotifyContainer">
                         <h2> the latest hits: </h2>

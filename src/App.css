@@ -55,32 +55,31 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Change this to adjust the layout */
-  padding: 20px 40px;
+  justify-content: space-between;
+  padding: 45px 40px;
   background-color: var(--primary-background);
   font-family: 'Syne Mono', monospace;
 }
 
-
 .navbar-left {
   flex: 1;
   display: flex;
-  justify-content: center; /* Center the logo within its flex container */
-  margin-left: -20%; /* Adjust this value to increase or decrease the left margin */
-  margin-right: 0px; /* Add this to ensure equal margin on both sides */
+  justify-content: center;
+  margin-left: -15%;
+  margin-right: 0px;
 }
 
 .navbar-center {
-  flex: 1; /* Adjust the flex property */
+  flex: 1;
   display: flex;
-  justify-content: flex-end; /* Pushes the navbar links to the right */
+  justify-content: flex-end;
   gap: 30px;
 }
 
 .navbar-center a {
   color: var(--primary-text-color);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 600;
   transition: color 0.3s ease;
 }
@@ -89,8 +88,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-left: 3%; /* Adjust this value to increase or decrease the left margin */
-  margin-right: 0px; /* Add this to ensure equal margin on both sides */
+  margin-left: 3%;
+  margin-right: 80px;
 }
 
 .navbar-center a:hover {
@@ -98,7 +97,7 @@ body {
 }
 
 .navbar-logo {
-  height: 30px;
+  height: 40px;
   margin-right: 20px;
 }
 
@@ -298,6 +297,157 @@ ul.App-header li:hover {
 .App-header-vertical {
   flex-direction: column;
 }
+
+/* Project Card Styles */
+.projectCard {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; 
+  width: 200px;
+  height: 330px;
+  padding: 0px 20px;
+  border-radius: 20px;
+  margin: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 250ms ease-in-out;
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+/* Make project images smaller */
+.projectCard img {
+  width: 80px; /* Adjust the width */
+  height: 80px; /* Adjust the height */
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.cardFront:hover {
+  transition: 250ms ease-in-out;
+  transform: translateY(-20px);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.projectCard.flip {
+  transform: rotateY(180deg);
+}
+
+.projectCard .cardFront,
+.projectCard .cardBack {
+  transition: 250ms ease-in-out;
+  height: 100%;
+  width: 100%;
+  padding: 10%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  align-items: flex-start;
+  backface-visibility: hidden;
+  border: 3px solid var(--sage-green);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.cardFront {
+  background: var(--card-background);
+  background: radial-gradient(circle, var(--card-background) 0%, var(--card-2-background) 46%, var(--card-3-background) 95%);
+}
+
+.cardBack {
+  background: var(--green);
+  background: radial-gradient(circle, var(--green) 0%, var(--light-green) 46%, var(--sage-green) 95%);
+  transform: rotateY(180deg);
+}
+
+.cardImageContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cardImage {
+  height: 200px;
+  width: 200px;
+  border: 2px solid var(--primary-background);
+  border-radius: 10px;
+  background: var(--beige);
+}
+
+.cardHeader {
+  color: var(--card-text-color);
+}
+
+.cardHeader > h3 {
+  font-weight: 800;
+  font-size: 20px;
+  margin: 15px 0px 0px 0px;
+}
+
+.cardBack > .cardHeader > h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 22px;
+
+}
+.cardBack > .cardHeader > h3  {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.cardBack > .cardHeader > h4 {
+  font-weight: 500;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.cardInfo > h4 {
+  font-weight: 500;
+  color: var(--card-text-color);
+  font-size: 16px;
+  margin: 5px 0px 0px 0px;
+  
+}
+
+.cardDetails > h5,
+.cardDetails > h5 > a {
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--card-text-color);
+  margin: 5px 0px 0px 0px;
+}
+
+.cardDetails > h5 > a {
+  font-weight: 600;
+  text-decoration: underline;
+  transition: 250ms ease-in;
+}
+
+.cardDetails > h5 > a:hover {
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--accent-text-color);
+  transition: 250ms ease-in;
+}
+
+.playButton {
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px 10px 0px;
+  transition: 250ms ease-in-out;
+}
+
+.playButton:hover {
+  transition: 250ms ease-in-out;
+  transform: translateY(-3px);
+}
+
 /* FOOTER */ 
 .footer {
   font-family: 'Syne', sans-serif;
@@ -672,3 +822,4 @@ ul.App-header li:hover {
     justify-content: center;
   }
 }
+

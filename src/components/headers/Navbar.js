@@ -4,6 +4,8 @@ import logo from '../../assets/imgs/icons/logo.png'; // Adjust the path accordin
 import '../../App.css';
 
 function Navbar({ isDarkMode, setDarkMode }) {
+  const handleToggle = () => setDarkMode(!isDarkMode);
+
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -12,14 +14,18 @@ function Navbar({ isDarkMode, setDarkMode }) {
       <div className="navbar-center">
         <Link to="/">home</Link>
         <Link to="/about">about me</Link>
-        <Link to="/projects">projects</Link>
-        <Link to="/projects">research</Link>
-        <Link to="/projects">photography</Link>
+        <Link to="/projects">what i do</Link>
+        <Link to="/photography">photography</Link>
       </div>
       <div className="navbar-right">
-        <button className="toggle-dark-mode" onClick={setDarkMode}>
-          {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-        </button>
+        <input 
+          type="checkbox" 
+          id="darkModeToggle" 
+          className="toggle" 
+          checked={isDarkMode} 
+          onChange={handleToggle} 
+        />
+        <label htmlFor="darkModeToggle"></label>
       </div>
     </nav>
   );
