@@ -8,12 +8,12 @@ import '../../App.css';
 function Footer () {
     const socials = [
         {
-            href: "https://www.linkedin.com/in/kelly-tran-2210/",
+            href: "https://www.linkedin.com/in/arushi-munjal/",
             alt: "LinkedIn",
             src: LinkedIn
         },
         {
-            href: "https://www.github.com/kxllytrxn",
+            href: "https://github.com/arushimunjal",
             alt: "Github",
             src: Github
         },
@@ -23,7 +23,7 @@ function Footer () {
             src: Mail
         },
         {
-            href: "mailto:kellytran03@berkeley.edu",
+            href: "https://open.spotify.com/user/arushimunjal?si=031e5c9defa74298",
             alt: "Spotify",
             src: Spotify
         }

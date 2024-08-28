@@ -45,13 +45,6 @@ function About() {
                         <h2>about me</h2>
                         <p>
                             While originally from Denver, Colorado, I currently live in the Bay Area, CA attending UC San Diego studying Computer Science, Math, and Global Health.
-                            <br /><br />
-                            I believe in the power of utilizing <strong> creative thinking </strong> to solve everyday problems.
-                            Between making latte art as a my part-time barista and storytelling my life through songwriting, expression of creativity fuels me.
-                            This driving force has led me to pursue <strong>full-stack development, </strong>
-                            a fulfilling avenue where I build and create intuitive interfaces that are friendly to both <strong> user </strong> and <strong> engineer. </strong>
-                            <br /><br />
-                            Outside student life, I enjoy de-stressing through exploring new cafes & restaurants, thrifting vintage pieces at flea markets, and cooking both family and fusion recipes with my friends.
                         </p>
                     </div>
                 </div>
